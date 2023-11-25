@@ -95,7 +95,7 @@ section{
 
 .header .logo {
   font-size: 2.5rem;
-  color: #fff;
+  color: #ffd700;
   font-weight: bold;
   tex-transform: uppercase;
   letter-spacing: .1rem;
@@ -108,7 +108,7 @@ section{
 
 .header .navbar a {
   font-size: 1.7rem;
-  color: #fff;
+  color: #333;
   margin: 0 1rem;
 }
 
@@ -118,7 +118,7 @@ section{
 
 .header .icons div {
   font-size: 2.5rem;
-  color: #222;
+  color: #333;
   padding: 0.5rem;
   cursor: pointer;
   margin-left: 1rem;
@@ -290,17 +290,352 @@ section{
 
 /* ---------------------------------------- feature section ends ---------------------------------------- */
 
+/* ---------------------------------------- schedule section starts ---------------------------------------- */
 
+.schedule{
+  background: #eee;
+}
 
+.schedule .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
 
+.schedule .box-container .box{
+  background: #fff;
+  overflow: hidden;
+}
 
+.schedule .box-container .box .content{
+  padding: 2rem;
+}
 
+.schedule .box-container .box .content h3{
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: .5rem;
+}
 
+.schedule .box-container .box .content p{
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
 
+.schedule .box-container .box .content icons{
+  padding: 0 2r.em;
+} 
 
+.schedule .box-container .box .content .icons span{
+  display: block;
+  font-size: 1.3rem;
+  color: #333;
+  padding: .3rem 0;
+}
 
+.schedule .box-container .box .content .icons span i{
+  margin-right: .5rem;
+}
 
+.schedule .box-container .box .btn{
+  margin: 1.5rem 2rem;
+  background: var(--main-color);
+  color: #fff;
+}
 
+.schedule .box-container .box .btn:hover{
+  background: #f66a97;
+}
+
+.schedule .box-container .box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------------------- schedule section ends ---------------------------------------- */
+
+/* ---------------------------------------- trainer section starts ---------------------------------------- */
+
+.trainers .trainer-slider{
+  padding-bottom: 4rem;
+}
+
+.trainers .trainer-slider .box{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.trainers .trainer-slider .box .image{
+  height: 40rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.trainers .trainer-slider .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.trainers .trainer-slider .box .name{
+  padding: 2rem;
+}
+
+.trainers .trainer-slider .box .name h1{
+  font-size: 3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.trainers .trainer-slider .box .name p{
+  font-size: 2rem;
+  color: #808080;
+}
+
+/* ---------------------------------------- trainer section ends ---------------------------------------- */
+
+/* ---------------------------------------- testimonial section starts ---------------------------------------- */
+
+.testimonial .box-container{
+  display: grid;
+  grid-tempelate-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  padding: 7rem 0;
+}
+
+.testimonial .box-container .box{
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  background: #fafafa;
+  box-shadow: 0 .1rem .5rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+}
+
+.testimonial .box-container .box:hover{
+  transform: translateY(-5%);
+  transition: .5s linear;
+  background: #fff;
+  border: .2rem solid #f8f8a1;
+}
+
+.testimonial .box-container .box .image{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.testimonial .box-container .box .image img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  position; absolute;
+  top: -6rem
+}
+
+.testimonial .box-container .box .name{
+  padding: 1rem 0;
+}
+
+.testimonial .box-container .box .name h1{
+  font-size: 2rem;
+  color: var(--black-color);
+}
+
+.testimonial .box-container .box .name p{
+  color: #222;
+  font-size: 1.3rem;
+}
+
+.testimonial .box-container .box .name p span{
+  text-transform: none;
+  color: #808000;
+}
+
+.testimonial .box-container .box p{
+  font-size: 1.5rem;
+  color: #696969;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* ---------------------------------------- testimonial section ends ---------------------------------------- */
+
+/* ---------------------------------------- blogs section starts ---------------------------------------- */
+
+.blogs .blogs-slider{
+  padding-bottom: 4rem;
+}
+
+.blogs .blogs-slider .box{
+  position: relative;
+  overflow: hidden;
+  margin: 1rem 0;
+  background: #fafafa;
+  box-shadow: 0 .5rem rgba(0, 0, 0, .3);
+}
+
+.blogs .blogs-slider .box .image{
+  height: 40rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs .blogs-slider .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .blogs-slider .box:hover .image img{
+  transform: scale(1.2);
+}
+
+.blogs .blogs-slider .box .content{
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.blogs .blogs-slider .box .content h3{
+  font-size: 2rem;
+  color: var(--black-color);
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.blogs .blogs-slider .box .content span{
+  font-size: 1.3rem;
+  color: #808080;
+}
+
+.blogs .blogs-slider .box .content span i{
+  margin-right: .5rem;
+  color: var(--main-color);
+}
+
+.blogs .blogs-slider .box .content p{
+  padding-top: 1rem;
+  color: #808080;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.blogs .blogs-slider .box .button{
+  text-align: center;
+  padding-button: 2rem;
+}
+
+.blogs .blogs-slider .box .button .btn{
+  background: var(--main-color);
+  color: #fff;
+}
+
+/* ---------------------------------------- blogs section ends ---------------------------------------- */
+
+/* ---------------------------------------- footer section starts ---------------------------------------- */
+
+.footer{
+  background: #222;
+}
+
+.footer .box-container{
+  display: grid;
+  grid-tempelate-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box{
+  padding: 2rem;
+}
+
+.footer .box-container .box h1{
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box .text{
+  color: #eee;
+  font: 1.3rem;
+  font-weight: normal;
+  linear-height: 1.8;
+  padding-bottom: 1rem;
+}
+
+.footer .box-container .box .icon{
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .icon a i{
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  background: var(--main-color);
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin: 0 .5rem;
+  color: #fff;
+}
+
+.footer .box-container .box .icon a i:hover{
+  color: var(--main-color);
+  background: none;
+  border: .2rem solid var(--main-color);
+}
+
+.footer .box-container .box .icon a{
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1.5rem
+}
+
+.footer .box-container .box .icons a{
+  display: block;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.footer .box-container .box .icons a i{
+  margin-right: .5rem;
+  color: var(--main-color);
+}
+
+.footer .box-container .box .icons a:hover i{
+  padding-right: 2rem;
+  color: #fff;
+}
+
+.footer .box-container .box .icons a:hover{
+  color: var(--main-color);
+}
+
+.footer .credit{
+  padding: 3rem 0;
+  text-align: center;
+  border-top: .1rem solid #808080;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #eee;
+}
+
+.footer .credit span{
+  color: #003300;
+}
+
+/* ---------------------------------------- footer section ends ---------------------------------------- */
 
 
 
@@ -350,6 +685,19 @@ body{
     margin: 2rem;
     font-size: 2rem;
   }
+  
+  .feature .feature-slider .box .content h3{
+    padding: 1rem;
+  }
+  
+  .testimonial .box-container{
+    padding: 1rem 0;
+  }
+  
+  .testimonial .box-container .box{
+    margin-top: 6rem;
+  }
+  
 }
 
 /* ---------------------------------------- for maxwidth 450px ---------------------------------------- */
